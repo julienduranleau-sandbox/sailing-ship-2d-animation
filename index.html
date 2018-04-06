@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sailing Ship 2D Animation</title>
+        <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+                font-family: Helvetica
+            }
+            span.key {
+                position: relative;
+                top: -1px;
+                display: inline-block;
+                padding: 3px 5px;
+                margin: 0px 5px;
+                border-radius: 3px;
+                background-color: #DDD;
+                box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <script src="libs/stats.min.js"></script>
+        <script src="libs/p5.min.js"></script>
+        <script src="libs/p5.dom.js"></script>
+        <script src="index.js"></script>
+        <script type="text/javascript">
+        let game;
+
+        function setup() { game = new Game() }
+        function draw() { game.draw() }
+        function keyPressed(e) { game.keyPressed(e) }
+        function keyReleased(e) { game.keyReleased(e) }
+        </script>
+    </body>
+</html>
